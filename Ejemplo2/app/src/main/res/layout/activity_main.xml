@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:rowCount="5"
+        android:columnCount="2"
+        >
+        <Button
+            android:id="@+id/btnFrame"
+            android:onClick="onClickFrame"
+            android:text="Frame Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="@color/teal_200"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnLinear"
+            android:onClick="onClickLinear"
+            android:text="Linear Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#4287f5"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnGrid"
+            android:onClick="onClickGrid"
+            android:text="Grid Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#c4965c"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnTable"
+            android:onClick="onClickTable"
+            android:text="Table Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#e6492e"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnRelative"
+            android:onClick="onClickRelative"
+            android:text="Relative Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#b072f7"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnComplementario2"
+            android:onClick="onClickComplementario2"
+            android:text="Complementario 2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#0cc93b"
+            android:layout_margin="5sp"/>
+        <Button
+            android:id="@+id/btnConstraint"
+            android:onClick="onClickConstraint"
+            android:text="Constraint Layout"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#d49022"
+            android:layout_margin="5sp"/>
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>

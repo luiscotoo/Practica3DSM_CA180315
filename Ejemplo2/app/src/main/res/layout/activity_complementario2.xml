@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejemplo_relative_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Login Relative Layout"
+            android:textColor="#05c2e8"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_login"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:hint="Correo"
+            android:inputType="textPersonName"
+            android:layout_marginTop="85dp"/>
+
+        <EditText
+            android:id="@+id/input_apellido"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_nombre"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_apellido"
+            android:text="Iniciar Sesión"
+            android:layout_marginTop="35dp"/>
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnIniciarSesion"
+            android:onClick="finalizarActividad"
+            android:text="Salir" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSalir"
+            android:text="¿Olvidaste tu constraseña?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="#fc033d"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
